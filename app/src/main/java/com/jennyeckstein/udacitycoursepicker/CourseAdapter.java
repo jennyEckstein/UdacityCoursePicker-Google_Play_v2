@@ -2,6 +2,7 @@ package com.jennyeckstein.udacitycoursepicker;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -63,19 +64,23 @@ public class CourseAdapter extends CursorAdapter {
 
         //Log.v(LOG_TAG, "IMAGE LINK: "+ title + " |" + imageLink + "|");
         if (!("".equals(imageLink)) && imageLink != null) {
-
-//TODO: resized images for picasso, to stop java from crashing, still they must be proportional
-            Picasso.with(context).load(imageLink).error(R.drawable.course_test_image)
+            Picasso.with(context)
+                    .load(imageLink)
+                    .error(R.drawable.no_image)
                     .resize(300, 200)
                     .into(viewHolder.course_image_view);
         }else{
-            //TODO: Account for no image link case. Make sure missing image course does not pick up image from course before.
+            Picasso.with(context)
+                    .load(R.drawable.no_image)
+                    .resize(300, 200)
+                    .into(viewHolder.course_image_view);
         }
         viewHolder.course_title_view.setText(title);
         if (!"0".equals(expected_duration)) {
             viewHolder.course_duration_view.setText(expected_duration + " " + duration_unit);
         }
         viewHolder.course_level_view.setText(level);
+        
         if("true".equals(new_release)) {
             viewHolder.course_new_release_view.setText("new");
             viewHolder.course_new_release_view.setBackgroundColor(context.getResources().getColor(R.color.soft_yellow));

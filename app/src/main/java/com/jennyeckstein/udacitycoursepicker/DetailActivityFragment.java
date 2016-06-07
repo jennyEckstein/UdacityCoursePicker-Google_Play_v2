@@ -60,7 +60,7 @@ public class DetailActivityFragment extends Fragment
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         if (this.passedUri != null) {
-            Log.v(LOG_TAG, "PASSED uri: " + this.passedUri.toString());
+           // Log.v(LOG_TAG, "PASSED uri: " + this.passedUri.toString());
             String key = this.passedUri.getPathSegments().get(1);
             return new CursorLoader(
                     getActivity(), this.passedUri, null, null, new String[]{key}, null);
@@ -188,7 +188,7 @@ public class DetailActivityFragment extends Fragment
                 Picasso.with(context).load(image).networkPolicy(NetworkPolicy.OFFLINE).into(mViewHolder.courseImageView);
             }else{
                 //TODO: replace with some generic "no image"
-                Picasso.with(context).load(R.drawable.course_test_image).into(mViewHolder.courseImageView);
+                Picasso.with(context).load(R.drawable.no_image).into(mViewHolder.courseImageView);
             }
 
         }
