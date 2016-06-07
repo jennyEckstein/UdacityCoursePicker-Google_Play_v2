@@ -1,0 +1,123 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"
+        >
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Udacity_Course_Item">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="Udacity_Course_Item_Title">
+        <item name="android:textColor">#1C262F</item>
+    </style>
+
+    <style name="Udacity_Course_Item_Inner_Content">
+        <item name="android:layout_marginLeft">16sp</item>
+    </style>
+
+    <style name="Udacity_Background">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Udacity_List">
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <style name="Udacity_TabBar">
+        <item name="android:elevation">6dp</item>
+    </style>
+    <style name="Udacity_AppBar">
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="Udacity_List_Item_Image">
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="Udacity_List_Item">
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="Udacity_List_Item_New_Label">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="Udacity_Detail_Buttons">
+        <item name="android:elevation">2dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Udacity_Detail_Buttons.GO_TO_COURSE">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:text">@string/take_course_message_button</item>
+    </style>
+
+    <style name="Udacity_Detail_Buttons.SHARE">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:text">@string/button_share</item>
+    </style>
+
+
+    <style name="Udacity_Detail_Course_Title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+       <!-- <item name="tools:text">Course Name Title</item>-->
+    </style>
+
+    <style name="Udacity_Detail_Headers">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="Udacity_Detail_Headers.REQUIRED_KNOWLEDGE_HEADER">
+        <item name="android:text">@string/required_knowledge_header</item>
+    </style>
+
+    <style name="Udacity_Detail_Headers.SUMMARY_HEADER">
+        <item name="android:text">@string/summary_header</item>
+    </style>
+
+    <style name="Udacity_Detail_Headers.SYLLABUS_HEADER">
+        <item name="android:text">@string/syllabus_header</item>
+    </style>
+
+    <style name="Udacity_Detail_Headers.FAQ_HEADER">
+        <item name="android:text">@string/faq_header</item>
+    </style>
+
+    <style name="Udacity_Detail_Text_Lots">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <!--<item name="tools:text">@string/lorem_ipsum</item>-->
+    </style>
+</resources>

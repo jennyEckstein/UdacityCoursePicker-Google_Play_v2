@@ -1,0 +1,7 @@
+<resources>
+    <style name="Udacity_Detail_Buttons.SHARE">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:text">@string/button_share</item>
+    </style>
+
+</resources>

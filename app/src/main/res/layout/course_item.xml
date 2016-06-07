@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/Udacity_List_Item">
+
+    <ImageView
+        android:id="@+id/course_image"
+        android:theme="@style/Udacity_List_Item_Image"
+        android:scaleType="centerCrop"
+        android:layout_height="100dp"
+        android:layout_width="140dp"
+        tools:src="@drawable/course_test_image" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/course_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Analyze Data with Hadoop and MapReduce" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/course_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/course_level"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textAllCaps="true"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/course_new_release"
+                android:theme="@style/Udacity_List_Item_New_Label"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

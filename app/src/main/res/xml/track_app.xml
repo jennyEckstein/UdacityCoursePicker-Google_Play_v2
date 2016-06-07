@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="ga_trackingId">UA-78737998-1</string>
+
+    <string name="go_autoActivityTracking">true</string>
+
+    <screenName name="com.jennyeckstein.udacitycoursepicker.MainActivity">
+        All Courses
+    </screenName>
+    <screenName name="com.jennyeckstein.udacitycoursepicker.DetailActivityFragment">
+        Detail Course
+    </screenName>
+</resources>
