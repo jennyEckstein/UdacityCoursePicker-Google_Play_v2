@@ -2,6 +2,6 @@
     android:minWidth="40dp"
     android:minHeight="40dp"
     android:updatePeriodMillis="0"
-    android:previewImage="@drawable/icon"
+    android:previewImage="@drawable/app_icon"
     android:initialLayout="@layout/course_appwidget" >
 </appwidget-provider>

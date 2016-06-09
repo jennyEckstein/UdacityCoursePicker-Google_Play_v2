@@ -11,7 +11,7 @@
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/app_icon"
         android:logo="@drawable/udacity_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >

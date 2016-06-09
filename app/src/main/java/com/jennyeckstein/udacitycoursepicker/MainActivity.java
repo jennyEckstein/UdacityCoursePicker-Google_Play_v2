@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -264,7 +265,9 @@ public class MainActivity extends AppCompatActivity
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
 
-        getWindow().setExitTransition(new Explode());
+        if (Build.VERSION.SDK_INT >= 21) {
+            getWindow().setExitTransition(new Explode());
+        }
 
        // TextView no_internet_view = (TextView) findViewById(R.id.no_internet);
        // no_internet_view.setVisibility(View.GONE);
