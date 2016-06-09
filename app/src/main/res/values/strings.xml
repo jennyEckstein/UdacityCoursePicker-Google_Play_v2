@@ -31,5 +31,9 @@
     <string name="liked_tab">Liked</string>
 
     <string name="no_new_courses">No New Courses</string>
+
+    <string name="no_short_courses">No Short Courses</string>
+    <string name="no_beginner_courses">"No Begginer Level Courses"</string>
+    <string name="no_liked_courses">No Liked Courses</string>
     <string name="like_description">Like</string>
 </resources>
