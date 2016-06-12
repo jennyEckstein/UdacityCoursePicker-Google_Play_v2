@@ -14,6 +14,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.transition.Explode;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -155,13 +156,13 @@ public class MainActivity extends AppCompatActivity
         super.onResume();
         this.detailActivityFragment = (DetailActivityFragment)
                 getFragmentManager().findFragmentByTag(DETAIL_FRAGMENT_TAG);
-        //Log.v(LOG_TAG, "ON RESUME");
+        Log.v(LOG_TAG, "ON RESUME");
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      //  Log.v(LOG_TAG, "ON create");
+        Log.v(LOG_TAG, "ON create");
         setContentView(R.layout.activity_main);
 
         ((MyApplication) getApplication()).startTracking();
@@ -245,6 +246,7 @@ public class MainActivity extends AppCompatActivity
             mTwoPane = false;
         }
 
+        Log.v(LOG_TAG, "TWO PANE: " + mTwoPane);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

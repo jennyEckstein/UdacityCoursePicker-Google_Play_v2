@@ -35,4 +35,6 @@
     <string name="no_beginner_courses">"Нет курсов для чайников"</string>
     <string name="no_liked_courses">Нет понравившихся курсов</string>
     <string name="like_description">Нравится</string>
+
+    <string name="button_share">Поделится</string>
 </resources>
