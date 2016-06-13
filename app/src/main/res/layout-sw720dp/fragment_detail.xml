@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_detail_container"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jennyeckstein.udacitycoursepicker.DetailActivityFragment">
+<!--android:id="@+id/container"-->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:theme="@style/Udacity_Detail_Course_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/course_layout_detail"
+                    android:textAlignment="center"
+                   >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/duration"
+                    android:textSize="18sp"
+                    tools:text="333 years"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:id="@+id/level"
+                    tools:text="ADVANCED"/>
+            </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:layout_margin="4dp">
+
+              <Button
+                  android:id="@+id/begin_course"
+                  android:elevation="2dp"
+                  android:textColor="@color/white"
+                  android:textSize="18sp"
+                  android:background="@color/colorAccent"
+                  android:text="@string/take_course_message_button"
+                  android:layout_margin="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"/>
+
+              <Button
+                  android:id="@+id/share_button"
+                  android:elevation="2dp"
+                  android:textColor="@color/white"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:textSize="18sp"
+                  android:background="@color/colorPrimaryDark"
+                  android:text="@string/button_share"
+                  android:layout_margin="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"/>
+
+          </LinearLayout>
+
+            <TextView
+                android:id="@+id/required_knowledge_header"
+                android:theme="@style/Udacity_Detail_Headers.REQUIRED_KNOWLEDGE_HEADER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/required_knowledge"
+                android:theme="@style/Udacity_Detail_Text_Lots"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/summary_header"
+                android:theme="@style/Udacity_Detail_Headers.SUMMARY_HEADER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/summary"
+                android:theme="@style/Udacity_Detail_Text_Lots"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/syllabus_header"
+                android:theme="@style/Udacity_Detail_Headers.SYLLABUS_HEADER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/syllabus"
+                android:theme="@style/Udacity_Detail_Text_Lots"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/faq_header"
+                android:theme="@style/Udacity_Detail_Headers.FAQ_HEADER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/faq"
+                android:theme="@style/Udacity_Detail_Text_Lots"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
