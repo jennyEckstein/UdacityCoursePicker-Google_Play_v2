@@ -14,7 +14,6 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.transition.Explode;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -156,13 +155,13 @@ public class MainActivity extends AppCompatActivity
         super.onResume();
         this.detailActivityFragment = (DetailActivityFragment)
                 getFragmentManager().findFragmentByTag(DETAIL_FRAGMENT_TAG);
-        Log.v(LOG_TAG, "ON RESUME");
+        //Log.v(LOG_TAG, "ON RESUME");
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.v(LOG_TAG, "ON create");
+     //   Log.v(LOG_TAG, "ON create");
         setContentView(R.layout.activity_main);
 
         ((MyApplication) getApplication()).startTracking();
@@ -170,10 +169,10 @@ public class MainActivity extends AppCompatActivity
         this.spinner = (ProgressBar) findViewById(R.id.progressBar1);
 
         if(findViewById(R.id.fragment_detail_container) != null){
-
+            mTwoPane = true;
             this.collapsingToolbarLayout =
                     (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-            mTwoPane = true;
+
 
 
             //
@@ -218,9 +217,12 @@ public class MainActivity extends AppCompatActivity
 //Log.v(LOG_TAG, "TWO PANE");
             if(savedInstanceState == null){
 
+                getFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_detail_container,
+                                new DetailActivityFragment())
+                        .commit();
 
-
-                this.detailActivityFragment =
+              /*  this.detailActivityFragment =
                         new DetailActivityFragment();
 
                 Bundle args = new Bundle();
@@ -233,7 +235,7 @@ public class MainActivity extends AppCompatActivity
                             .replace(R.id.fragment_detail_container,
                                     detailActivityFragment,
                                     DETAIL_FRAGMENT_TAG)
-                            .commit();
+                            .commit();*/
                 }
 
 
@@ -241,12 +243,12 @@ public class MainActivity extends AppCompatActivity
                 mTwoPane = false;
             }
 
-        }else{
+       /* }else{
            // Log.v(LOG_TAG, "ONE PANE");
             mTwoPane = false;
-        }
+        }*/
 
-        Log.v(LOG_TAG, "TWO PANE: " + mTwoPane);
+       // Log.v(LOG_TAG, "TWO PANE: " + mTwoPane);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

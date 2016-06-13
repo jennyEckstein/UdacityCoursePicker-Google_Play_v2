@@ -171,17 +171,6 @@
                     android:id="@+id/fragment_detail_container"
                     >
 
-                    <!--            <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:text="Hwlooe"/>-->
-                    <!--<fragment
-                        xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:name="com.jennyeckstein.udacitycoursepicker.DetailActivityFragment"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        />-->
-
                 </FrameLayout>
             </android.support.v4.widget.NestedScrollView>
 

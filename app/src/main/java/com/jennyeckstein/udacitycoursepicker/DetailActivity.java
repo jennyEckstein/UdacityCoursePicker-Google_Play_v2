@@ -54,14 +54,16 @@ public class DetailActivity extends AppCompatActivity
 
         setContentView(R.layout.activity_detail);
 
-        Bundle arguments = new Bundle();
+        if(savedInstanceState == null){
+            Bundle arguments = new Bundle();
+            arguments.putParcelable(DetailActivityFragment.DETAIL_URI, getIntent().getData());
+            this.currentKey = getIntent().getData().getPathSegments().get(1);
+            DetailActivityFragment fragment = new DetailActivityFragment();
+            fragment.setArguments(arguments);
+            getFragmentManager().beginTransaction().add(R.id.fragment_detail_container, fragment).commit();
+        }
 
 
-        arguments.putParcelable(DetailActivityFragment.DETAIL_URI, getIntent().getData());
-        this.currentKey = getIntent().getData().getPathSegments().get(1);
-        DetailActivityFragment fragment = new DetailActivityFragment();
-        fragment.setArguments(arguments);
-        getFragmentManager().beginTransaction().add(R.id.fragment_detail_container, fragment).commit();
 
         //setupWindowAnimations();
 
