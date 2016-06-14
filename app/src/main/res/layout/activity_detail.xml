@@ -5,7 +5,7 @@
     android:id="@+id/detail_container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context="com.jennyeckstein.udacitycoursepicker.DetailActivity"
+    tools:context="com.jennyeckstein.coursesearch.DetailActivity"
     >
 
     <android.support.design.widget.AppBarLayout
@@ -82,7 +82,7 @@
                             android:text="Hwlooe"/>-->
            <!-- <fragment
                 xmlns:android="http://schemas.android.com/apk/res/android"
-                android:name="com.jennyeckstein.udacitycoursepicker.DetailActivityFragment"
+                android:name="DetailActivityFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />-->

@@ -1,7 +1,7 @@
 <fragment
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/detail_activity_fragment"
-    android:name="com.jennyeckstein.udacitycoursepicker.DetailActivityFragment"
+    android:name="com.jennyeckstein.coursesearch.DetailActivityFragment"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     />

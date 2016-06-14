@@ -5,7 +5,7 @@
     android:orientation="vertical"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
-    tools:context="com.jennyeckstein.udacitycoursepicker.MainActivityFragment"
+    tools:context="com.jennyeckstein.coursesearch.MainActivityFragment"
     >
 
     <TextView

@@ -6,7 +6,7 @@
     android:baselineAligned="false"
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
-    tools:context="com.jennyeckstein.udacitycoursepicker.MainActivity">
+    tools:context="com.jennyeckstein.coursesearch.MainActivity">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -78,7 +78,7 @@
 
                 <fragment
                     android:id="@+id/main_activity_fragment"
-                    android:name="com.jennyeckstein.udacitycoursepicker.MainActivityFragment"
+                    android:name="com.jennyeckstein.coursesearch.MainActivityFragment"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"                    />
             </android.support.v4.view.ViewPager>
@@ -99,7 +99,7 @@
             android:id="@+id/detail_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context="com.jennyeckstein.udacitycoursepicker.DetailActivity"
+            tools:context="com.jennyeckstein.coursesearch.DetailActivity"
             >
 
             <android.support.design.widget.AppBarLayout

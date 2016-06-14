@@ -4,10 +4,10 @@
 
     <string name="go_autoActivityTracking">true</string>
 
-    <screenName name="com.jennyeckstein.udacitycoursepicker.MainActivity">
+    <screenName name="com.jennyeckstein.coursesearch.MainActivity">
         All Courses
     </screenName>
-    <screenName name="com.jennyeckstein.udacitycoursepicker.DetailActivityFragment">
+    <screenName name="com.jennyeckstein.coursesearch.DetailActivityFragment">
         Detail Course
     </screenName>
 </resources>

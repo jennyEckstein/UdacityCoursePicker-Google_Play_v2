@@ -5,7 +5,7 @@
     android:layout_margin="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jennyeckstein.udacitycoursepicker.DetailActivityFragment">
+    tools:context="com.jennyeckstein.coursesearch.DetailActivityFragment">
 <!--android:id="@+id/container"-->
     <ScrollView
         android:layout_width="wrap_content"
